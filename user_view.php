@@ -1,7 +1,4 @@
 <!DOCTYPE HTML>
-<?php
-session_start();
-?>
 <html>
 <head>
 <title>Customize Location App</title>
@@ -19,6 +16,8 @@ session_start();
 <link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
 <!-- //lined-icons -->
 <script src="js/jquery-1.10.2.min.js"></script>
+<!--clock init-->
+<script src="js/css3clock.js"></script>
 </head> 
 <body>
    <div class="page-container">
@@ -48,81 +47,21 @@ session_start();
 					<div class="clearfix"></div>
 				</div>
 					<!-- //header-ends -->
-						<!--outter-wp-->
-							<div class="outter-wp">
-										<!--/profile-->
-										<br/>
-										<h3 class="sub-tittle pro" style="text-align: center;"><b>Profile</b></h3>
-														<!--/profile-inner-->
-														 <div class="profile-section-inner">
-														       <div class="col-md-12 ">
-																	<h3 class="inner-tittle" style="text-align: center;">Personal Information </h3>
-																	<div class="main-grid3">
-																     <div class="p-20">	
-																	 <div class="login" >
-		<?php		 
-include("config.php");
-$asd=$_SESSION['id'];
-$result5 = mysql_query("SELECT * FROM admin WHERE email='$asd'");
-while($rows5 = mysql_fetch_array($result5)){
-?>																		<form action="profile.php" method="post"> 
-												<?php
-        if(isset($_POST["submit"])){
-			
-		$full_name=$_POST["full_name"];
-		$password=$_POST["password"];
-		
-    include('config.php'); 
-
-	 if($full_name || $password)
-		{
-		$sql="UPDATE `admin` SET `password`='$password',`full_name`='$full_name' WHERE email='$asd' ";
-		$result=mysql_query($sql);
-			if($result){
-				echo '<p style="text-align:center; font-size: 20px;">' ;
-				echo "Your Information Edit Successfully";
-				echo '</p><br>';
-				} else {
-					echo '<p style="text-align:center; color: red; font-size: 20px;">' ;
-					echo "Error! try again";
-					echo '</p><br>';
-					}
-				} 	
-					   }
-?>
-																		<div class="about-info-p">
-																			<strong>Admin ID Number</strong>
-																			<input type="text" name="adminID" value="<?php echo $rows5['adminID'];?>" style="background: none;" readonly>
-																		</div>
-																		<div class="about-info-p">
-																			<strong>Admin Full Name</strong>
-																			<input type="text" name="full_name" value="<?php echo $rows5['full_name'];?>" style="background: none;">
-																		</div>
-																		<div class="about-info-p">
-																			<strong>Email</strong>
-																			<input type="text" name="email" value="<?php echo $rows5['email'];?>" style="background: none;" readonly>
-																		</div>
-																		<div class="about-info-p m-b-0">
-																			<strong>Password</strong>
-																			<input type="text" name="password" value="<?php echo $rows5['password'];?>" style="background: none;">
-																		</div>
-																		<input type="submit" name="submit" value="Save Changes">
-
-																		</form>
-																		<?php
-}
-?>	
-																	</div>
-																	</div>
-																 </div>
-															  </div>
-																<div class="clearfix"></div>
-															</div>
-															
-											 	<!--//profile-inner-->
-												<!--//profile-->
+						<div class="outter-wp">
+												<!--/charts-->
+												<div class="charts">
+												  <div class="chrt-inner">	
+													<!--//weather-charts-->
+														<div class="graph-visualization">
+														 <h3 class="sub-tittle">User View </h3>
+																<iframe src="https://www.google.com/maps/d/embed?mid=1RQtiuoRQ9sdYRUZ6iITvJq5nGsA3aArT&hl=ar" width="100%" height="480"></iframe>
+														<div class="clearfix"></div>		
+													</div>
 									</div>
-									<!--//outer-wp-->
+									<!--/charts-inner-->
+									</div>
+										<!--//outer-wp-->
+									</div>
 									 <!--footer section start-->
 										<footer>
 										   <p>&copy 2018 Customize Location App</a></p>
@@ -148,7 +87,7 @@ while($rows5 = mysql_fetch_array($result5)){
 									</div>
 							   <!--//down-->
                            <div class="menu">
-									<ul id="menu" >
+								<ul id="menu" >
 										<li><a href="a_index.php"><i class="fa fa-tachometer"></i> <span>Home</span></a></li>
 										<li><a href="https://drive.google.com/open?id=1RQtiuoRQ9sdYRUZ6iITvJq5nGsA3aArT&usp=sharing"><i class="fa fa-cog"></i> <span>Nodes</span></a></li>
 										<li><a href="New_account.php"><i class="fa fa-table"></i> <span>Create Account For Admin</span></a></li>
@@ -178,5 +117,9 @@ while($rows5 = mysql_fetch_array($result5)){
 											toggle = !toggle;
 										});
 							</script>
+<!--js -->
+<script src="js/scripts.js"></script>
+<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

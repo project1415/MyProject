@@ -59,10 +59,5 @@ mysql_close(); //close database*/
 		</div>
 										<div class="footer">
 										</div>
-<!--js -->
-<script src="js/jquery.nicescroll.js"></script>
-<script src="js/scripts.js"></script>
-<!-- Bootstrap Core JavaScript -->
-   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>

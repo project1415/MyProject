@@ -17,7 +17,6 @@
 <!-- //lined-icons -->
 <script src="js/jquery-1.10.2.min.js"></script>
 <!--clock init-->
-<script src="js/css3clock.js"></script>
 </head> 
 <body>
    <div class="page-container">
@@ -48,64 +47,17 @@
 				</div>
 					<!-- //header-ends -->
 						<div class="outter-wp">
-						<!--custom-widgets-->
-												<div class="custom-widgets">
-												   <div class="row-one">
-														<a href="a_index.php"><div class="col-md-2 widget">
-															<div class="stats-left">
-																<h5><span>Home</span></h5>
-															</div>
-														</div></a>
-														<a href="map.php"><div class="col-md-2 widget">
-															<div class="stats-left">
-																<h5><span>Add New Node</span></h5>
-															</div>
-														</div></a>
-														<a href="Delete_node.php"><div class="col-md-2 widget">
-															<div class="stats-left">
-																<h5></i><span>Delete Node</span></h5>
-															</div>
-														</div></a>
-														<a href="Add_event.php"><div class="col-md-2 widget">
-															<div class="stats-left">
-																<h5><span>Add New Events</span></h5>
-															</div>
-														</div></a>
-														<a href="Delete_event.php"><div class="col-md-2 widget">
-															<div class="stats-left">
-																<h5><span>Delete Events</span></h5>
-															</div>
-														</div></a>
-														<a href="user_view.php"><div class="col-md-2 widget">
-															<div class="stats-left">
-																<h5><span>User View</span></h5>
-															</div>
-														</div></a>
-														<div class="clearfix"> </div>	
-													</div>
-												</div>
-												<!--//custom-widgets-->
 												<!--/charts-->
 												<div class="charts">
 												  <div class="chrt-inner">	
 													<!--//weather-charts-->
 														<div class="graph-visualization">
-															<div class="col-md-3 ">
-																	<section class="panel">
-																		<div class="user-heading alt clock-row terques-bg">
-																			<h3 style="color:#fff; font-size: 22pt; margin:-30pt 0 30pt 0;">Easy Clock </h3>
-																		</div>
-																			<ul id="clock">
-																				<li id="sec"></li>
-																				<li id="hour"></li>
-																				<li id="min"></li>
-																			</ul>
-																	</section>
-															</div>
-														<div class="col-md-9">
-														 <h3 class="sub-tittle">User View </h3>
-																<iframe src="https://www.google.com/maps/d/embed?mid=1RQtiuoRQ9sdYRUZ6iITvJq5nGsA3aArT&hl=ar" width="100%" height="480"></iframe>
-															
+														<div class="col-md-12">
+														<br/><br/><br/>
+														 <h3 class="sub-tittle" style="text-align:center;"><b>Introduction</b></h3>
+														 <br/><p>Maps have become very important for people to know information about the specific places and how to route them, also to know whether there are two or more paths to the same place and which is the shortest and we can get information about public places such as hospitals, schools, institutes, malls or other. Unfortunately, some people are forced to ask others maybe take many time to get the correct direction of their destination and this may consume a lot of time and effort to reach. And others may also, want to know if there is any event / course to get new knowledge in their free time but, the correct destination and time for these events is missing. </p>
+														 <br/><p>In general idea for our project is trying to solve this problems by develop a mobile application is easy to use and convenient for user. </p>
+														 <br/><p>Customized location app will serve everyone whose looking for help finding events and navigation services. our app will provide navigation service based on google map. this service will reduce time and effort for search about building or event especially if a new student or employee. The app will be synced with cloud and the information will update when the user has internet connection.</p>
 														</div>
 															<div class="clearfix"></div>		
 													</div>
@@ -141,22 +93,11 @@
                            <div class="menu">
 									<ul id="menu" >
 										<li><a href="a_index.php"><i class="fa fa-tachometer"></i> <span>Home</span></a></li>
-										 <li id="menu-academico" ><a href="#"><i class="lnr lnr-highlight"></i> <span> Nodes </span> <span class="fa fa-angle-right" style="float: right"></span></a>
-										   <ul id="menu-academico-sub" >
-											<li id="menu-academico-avaliacoes" ><a href="map.php"> Add New Node</a></li>
-											<li id="menu-academico-avaliacoes" ><a href="Delete_node.php">Delete Node</a></li>
-											
-										  </ul>
-										</li>
-										 <li id="menu-academico" ><a href="#"><i class="fa fa-table"></i> <span>Events</span> <span class="fa fa-angle-right" style="float: right"></span></a>
-											 <ul id="menu-academico-sub" >
-												<li id="menu-academico-avaliacoes" ><a href="Add_event.php">Add New Events</a></li>
-												<li id="menu-academico-boletim" ><a href="Delete_event.php">Delete Events</a></li>
-											  </ul>
-										 </li>
-									<li><a href="user_view.php"><i class="lnr lnr-map"></i> <span>User View</span></a></li>
-									
-								  </ul>
+										<li><a href="https://drive.google.com/open?id=1RQtiuoRQ9sdYRUZ6iITvJq5nGsA3aArT&usp=sharing"><i class="fa fa-cog"></i> <span>Nodes</span></a></li>
+										<li><a href="New_account.php"><i class="fa fa-table"></i> <span>Create Account For Admin</span></a></li>
+										<li><a href="tutorial.php"><i class="fa fa-camera-retro"></i> <span>Tutorial Video</span></a></li>
+										<li><a href="user_view.php"><i class="lnr lnr-map"></i> <span>User View</span></a></li>
+								   </ul>
 								</div>
 							  </div>
 							  <div class="clearfix"></div>		
@@ -180,9 +121,5 @@
 											toggle = !toggle;
 										});
 							</script>
-<!--js -->
-<script src="js/scripts.js"></script>
-<!-- Bootstrap Core JavaScript -->
-   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
