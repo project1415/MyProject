@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Customize Location Map</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- Bootstrap Core CSS -->
+<link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+<!-- Custom CSS -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Graph CSS -->
+<link href="css/font-awesome.css" rel="stylesheet"> 
+<!-- jQuery -->
+<link href='//fonts.googleapis.com/css?family=Roboto:700,500,300,100italic,100,400' rel='stylesheet' type='text/css'>
+<!-- lined-icons -->
+<link rel="stylesheet" href="css/icon-font.min.css" type='text/css' />
+<!-- //lined-icons -->
+<script src="js/jquery-1.10.2.min.js"></script>
+<!--clock init-->
+<script src="js/css3clock.js"></script>
+</head> 
+<body>
+   <div class="page-container">
+   <!--/content-inner-->
+	<div class="left-content">
+	   <div class="inner-content">
+		<!-- header-starts -->
+			<div class="header-section">
+						<!--menu-right-->
+						<div class="top_menu">
+							<!--/profile_details-->
+									<ul class="nofitications-dropdown">
+											<li class="dropdown note">
+													   <div class="wrapper-dropdown-3" tabindex="1">
+															<p style="margin-left:20px; width:200px">Customize Location APP</p>
+														</div>
+										    </li>	
+								</ul>
+							<div class="clearfix"></div>	
+							<!--//profile_details-->
+						</div>
+						<!--//menu-right-->
+					<div class="clearfix"></div>
+				</div>
+					<!-- //header-ends -->
+						<div class="outter-wp">
+												<!--/charts-->
+												<div class="charts">
+												  <div class="chrt-inner">	
+													<!--//weather-charts-->
+														<div class="graph-visualization">
+															<div class="col-md-12 ">
+																	<section class="panel">
+																		<div class="user-heading alt clock-row terques-bg">
+																			<h3 style="color:#fff; font-size: 22pt; margin:-30pt 0 30pt 0;">Easy Clock </h3>
+																		</div>
+																			<ul id="clock">
+																				<li id="sec"></li>
+																				<li id="hour"></li>
+																				<li id="min"></li>
+																			</ul>
+																	</section>
+															</div>
+															<div class="clearfix"></div>
+																<p style="text-align: center;"><b>Customize Location Map is an outdoors routing and localization software to facilitate finding the way through the place inside buildings with high accuracy.</b></p>
+													</div>
+									</div>
+									<!--/charts-inner-->
+									</div>
+										<!--//outer-wp-->
+									</div>
+									 <!--footer section start-->
+										<footer>
+										   <p>&copy 2018 Customize Location Map</a></p>
+										</footer>
+									<!--footer section end-->
+								</div>
+							</div>
+				<!--//content-inner-->
+			<!--/sidebar-menu-->
+				<div class="sidebar-menu">
+					<header class="logo">
+					<a href="#" class="sidebar-icon"> <span class="fa fa-bars"></span> </a> <a href="welcome.html"> <span id="logo"> <h1></h1></span> </a> 
+				</header>
+			<div style="border-top:1px solid rgba(69, 74, 84, 0.7)"></div>
+			<!--/down-->
+							<div class="down">	
+									  <a href="welcome.html"><img src="images/admin.jpg"></a>
+									 <p>Customize Location APP</p>
+									</div>
+							   <!--//down-->
+                           <div class="menu">
+									<ul id="menu" >
+										<li><a href="welcome.html"><i class="fa fa-tachometer"></i> <span>Home</span></a></li>
+										<li><a href="https://www.google.com/maps/d/embed?mid=1RQtiuoRQ9sdYRUZ6iITvJq5nGsA3aArT&hl=ar"><i class="lnr lnr-map"></i> <span>Map</span></a></li>
+									</ul>
+								</div>
+							  </div>
+							  <div class="clearfix"></div>		
+							</div>
+							<script>
+							var toggle = true;
+										
+							$(".sidebar-icon").click(function() {                
+							  if (toggle)
+							  {
+								$(".page-container").addClass("sidebar-collapsed").removeClass("sidebar-collapsed-back");
+								$("#menu span").css({"position":"absolute"});
+							  }
+							  else
+							  {
+								$(".page-container").removeClass("sidebar-collapsed").addClass("sidebar-collapsed-back");
+								setTimeout(function() {
+								  $("#menu span").css({"position":"relative"});
+								}, 500);
+							  }
+											toggle = !toggle;
+										});
+							</script>
+<!--js -->
+<script src="js/scripts.js"></script>
+<!-- Bootstrap Core JavaScript -->
+   <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
