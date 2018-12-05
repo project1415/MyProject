@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+        id    = "com.nedaaziny.esignatureaPP"
+        >
+
+    <name>Customize Location App</name>
+
+    <description>
+       Customize Location App.
+    </description>
+
+    <author href="http://nedaaziny.org" email="nado070@hotmail.com">
+        Nedaa Ameen
+    </author>
+	
+	<plugin name="cordova-plugin-whitelist" source="npm"  />
+	 
+    <preference name="webviewbounce" value="false" />
+
+    <access origin="*"/>
+    <allow-intent href="http://*/*" />
+    <allow-intent href="https://*/*" />
+	
+	<allow-navigation href="https://www.google.com/maps/embed/*" />
+	
+	<icon src="icon file.png" />
+
+	
+</widget>
